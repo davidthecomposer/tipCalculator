@@ -102,9 +102,9 @@ h1 {
 
 }
 
-h2 {
-    font-size: 3rem;
-    font-family: 'IBM Plex Mono', monospace;
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 form {
@@ -142,7 +142,7 @@ p {
     align-items: center;
     justify-content: space-evenly;
     width: 12rem;
-    margin: 1% auto 1%;
+    margin: 1% auto .5%;
     left: 43.5%;
 }
 
