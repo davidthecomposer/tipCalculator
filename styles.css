@@ -90,16 +90,16 @@ video {
 body {
 
     text-align: center;
-    background-color: rgba(105, 105, 105, 0.904);
+    background-image: url('table.svg');
+    background-size: cover;
     color: white;
     font-family: 'IBM Plex Mono', monospace;
 }
 
 h1 {
-    margin-top: 3%;
+    margin-top: 8%;
     font-size: 2.3rem;
     font-weight: 300;
-
 }
 
 h3 {
@@ -112,23 +112,16 @@ form {
     display: flex;
     width: 25rem;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.585);
+    background-image: url('panel.svg');
+    background-size: cover;
     padding: 0rem .5rem;
-    margin: 0.5% auto;
-    border-radius: 4% 4% 9% 9%;
-    border: solid 2px rgba(29, 27, 27, 0.281);
-
-
-
-
+    margin: 0.5% auto 0.5% 10%;
+    border: none;
 }
 
 p {
     font-size: .8rem;
     border: solid .25px rgb(255, 255, 255);
-    padding: .25rem;
-    margin-right: .15rem;
-
 }
 
 .signature {
@@ -152,7 +145,6 @@ p {
     text-align: center;
     height: 4rem;
     border: solid 1px rgb(255, 255, 255);
-
 }
 
 .input-design1 {
@@ -161,7 +153,6 @@ p {
     text-align: center;
     height: 4rem;
     border: solid 1px rgb(255, 255, 255);
-
 }
 
 .input-design2 {
@@ -170,7 +161,6 @@ p {
     text-align: center;
     height: 4rem;
     border: solid 1px rgb(255, 255, 255);
-
 }
 
 .input-design3 {
@@ -179,33 +169,28 @@ p {
     text-align: center;
     height: 4rem;
     border: solid 1px rgb(255, 255, 255);
-
 }
 
 .first {
     align-self: flex-start;
     padding: 1rem;
-
+    margin-left: 3%;
 }
 
 .second {
     align-self: flex-end;
-    padding: 1rem 2rem;
-
-
+    padding: 1rem 1.5rem;
 }
 
 .third {
     align-self: flex-start;
     padding: 1rem;
-
-
+    margin-left: 3%;
 }
 
 .fourth {
     align-self: flex-end;
-    padding: 1rem 2rem;
-
+    padding: 1rem 1.5rem;
 }
 
 .submit {
@@ -228,8 +213,6 @@ p {
     width: 8rem;
     font-family: 'IBM Plex Mono', monospace;
     cursor: pointer;
-
-
 }
 
 .text {
@@ -238,11 +221,13 @@ p {
 }
 
 .tip-amounts {
+    width: 34%;
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-bottom: 1rem;
-
+    margin-left: 60%;
+    
 }
 
 ::placeholder {
@@ -253,7 +238,6 @@ p {
 
 .tip-buttons {
     background-image: repeating-radial-gradient(rgba(0, 0, 0, 0.541), rgba(255, 255, 255, 0.178));
-
 }
 
 .tip-hover {
@@ -284,17 +268,16 @@ input:hover {
     background-color: rgba(255, 255, 255, 0.527);
     transform: scale(1.1, 1.1);
     transition-duration: .3s;
-
 }
 
 input:focus {
     outline: none;
 }
 
-form:hover {
+/* form:hover {
     background-color: rgba(0, 0, 0, 0.523);
 
-}
+} */
 
 @keyframes shadow-pulse {
     0% {
@@ -315,7 +298,6 @@ form:hover {
     color: red;
     padding: 1rem;
     visibility: hidden;
-
 }
 
 .tip-message {
@@ -332,5 +314,4 @@ form:hover {
     border-right: none;
     border-left: none;
     cursor: default;
-
 }
