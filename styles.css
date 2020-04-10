@@ -1,96 +1,28 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
 
     text-align: center;
-    background-image: url('table.svg');
+    background-image: url('images/table.svg');
     background-size: cover;
     color: white;
     font-family: 'IBM Plex Mono', monospace;
@@ -112,7 +44,7 @@ form {
     display: flex;
     width: 25rem;
     flex-direction: column;
-    background-image: url('panel.svg');
+    background-image: url('images/panel.svg');
     background-size: cover;
     padding: 0rem .5rem;
     margin: 0.5% auto 0.5% 10%;
@@ -125,18 +57,18 @@ p {
 }
 
 .signature {
-    height: 3rem;
+    height: 4rem;
 }
 
 .signature-container {
-    position: absolute;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     width: 12rem;
-    margin: .5% auto .5%;
-    left: 43.5%;
+    margin: 2rem auto;
+    
 }
 
 .input-design {
