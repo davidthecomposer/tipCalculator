@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -19,191 +87,265 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html,
 body {
-
-    text-align: center;
-    background-image: url('images/table.svg');
-    background-size: cover;
-    color: white;
-    font-family: 'IBM Plex Mono', monospace;
+	height: 100%;
 }
 
-h1 {
-    margin-top: 8%;
-    font-size: 2.3rem;
-    font-weight: 300;
+body {
+	background: url("images/table.svg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.calc-title {
+	margin-top: 8%;
+	font-size: 2.3rem;
+	text-align: center;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-family: 'Shadows Into Light', cursive;
+	font-size: 1.5rem;
+	font-family: "Shadows Into Light", cursive;
 }
 
 form {
-    position: relative;
-    display: flex;
-    width: 25rem;
-    flex-direction: column;
-    background-image: url('images/panel.svg');
-    background-size: cover;
-    padding: 0rem .5rem;
-    margin: 0.5% auto 0.5% 10%;
-    border: none;
+	color: white;
+	font-family: "IBM Plex Mono", monospace;
+	position: relative;
+	display: flex;
+	height: 652px;
+	width: 364px;
+	flex-direction: column;
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.924),
+		rgba(31, 31, 31, 0.918),
+		rgba(0, 0, 0, 0.938)
+	);
+
+	border: 4px rgb(34, 33, 33) solid;
+	border-radius: 4%;
+	margin: 0 0 0 10%;
 }
 
 p {
-    font-size: .8rem;
-    border: solid .25px rgb(255, 255, 255);
+	font-size: 0.8rem;
+	border: solid 0.25px rgb(255, 255, 255);
 }
 
 .signature {
-    height: 4rem;
+	height: 4rem;
+	margin: 0 0.5rem;
 }
 
 .signature-container {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 12rem;
-    margin: 2rem auto;
-    
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 2rem auto;
+}
+.top-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 25%;
 }
 
-.input-design {
-    background-image: repeating-radial-gradient(rgb(17, 0, 248), rgba(255, 255, 255, 0.7));
-    border-radius: 50% 5% 25%;
-    text-align: center;
-    height: 4rem;
-    border: solid 1px rgb(255, 255, 255);
+.input-blue {
+	background-image: repeating-radial-gradient(
+		rgb(17, 0, 248),
+		rgba(255, 255, 255, 0.7)
+	);
+	border-radius: 50% 5% 25%;
+	text-align: center;
+	height: 100%;
+	border: solid 1px rgb(255, 255, 255);
+	margin: 0 0 0 0.5%;
 }
 
-.input-design1 {
-    background-image: repeating-radial-gradient(rgb(248, 0, 0), rgba(255, 255, 255, 0.7));
-    border-radius: 25% 5% 50%;
-    text-align: center;
-    height: 4rem;
-    border: solid 1px rgb(255, 255, 255);
+.input-red {
+	background-image: repeating-radial-gradient(
+		rgb(248, 0, 0),
+		rgba(255, 255, 255, 0.7)
+	);
+	border-radius: 25% 5% 50%;
+	text-align: center;
+	height: 100%;
+	border: solid 1px rgb(255, 255, 255);
+	margin: 0 0 0 0.5%;
 }
 
-.input-design2 {
-    background-image: repeating-radial-gradient(rgb(136, 116, 0), rgba(255, 255, 255, 0));
-    border-radius: 50% 5% 25%;
-    text-align: center;
-    height: 4rem;
-    border: solid 1px rgb(255, 255, 255);
+.input-yellow {
+	background-image: repeating-radial-gradient(
+		rgb(136, 116, 0),
+		rgba(255, 255, 255, 0)
+	);
+	border-radius: 50% 5% 25%;
+	text-align: center;
+	height: 100%;
+	border: solid 1px rgb(255, 255, 255);
+	margin: 0 0 0 0.5%;
 }
 
-.input-design3 {
-    background-image: repeating-radial-gradient(rgb(57, 128, 0), rgba(255, 255, 255, 0.082));
-    border-radius: 25% 5% 50%;
-    text-align: center;
-    height: 4rem;
-    border: solid 1px rgb(255, 255, 255);
+.input-green {
+	background-image: repeating-radial-gradient(
+		rgb(57, 128, 0),
+		rgba(255, 255, 255, 0.082)
+	);
+	border-radius: 25% 5% 50%;
+	text-align: center;
+	height: 100%;
+	border: solid 1px rgb(255, 255, 255);
+	margin: 0 0 0 0.5%;
+}
+
+.bottom-content label {
+	margin-right: 10px;
+	width: fit-content;
+}
+
+.bottom-content {
+	display: flex;
+	flex-direction: column;
+	height: 75%;
 }
 
 .first {
-    align-self: flex-start;
-    padding: 1rem;
-    margin-left: 3%;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1rem;
+	margin-left: 3%;
+	height: 18%;
 }
 
 .second {
-    align-self: flex-end;
-    padding: 1rem 1.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-self: flex-end;
+
+	padding: 1rem;
+	height: 18%;
+}
+.tip-amounts {
+	width: 158px;
+	height: 5%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	margin: 2.5% 0 2.5% 48%;
+	align-items: center;
 }
 
 .third {
-    align-self: flex-start;
-    padding: 1rem;
-    margin-left: 3%;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1rem;
+	margin-left: 3%;
+	height: 18%;
 }
 
 .fourth {
-    align-self: flex-end;
-    padding: 1rem 1.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-self: flex-end;
+
+	padding: 1rem;
+	height: 18%;
 }
 
 .submit {
-    align-self: flex-start;
-    display: flex;
-    align-content: space-between;
-    padding: 1rem 1rem 2rem;
-    ;
-    margin-left: 12%
+	align-self: flex-start;
+	display: flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1rem 1rem 2rem;
+	height: 18%;
+	margin-left: 12%;
 }
 
-
 #submit {
-    background-image: repeating-radial-gradient(rgb(108, 0, 248), rgba(255, 255, 255, 0.7));
-    border-radius: 50%;
-    text-align: center;
-    height: 2.5rem;
-    border: solid 1px rgb(255, 255, 255);
-    color: white;
-    width: 8rem;
-    font-family: 'IBM Plex Mono', monospace;
-    cursor: pointer;
+	background-image: repeating-radial-gradient(
+		rgb(108, 0, 248),
+		rgba(255, 255, 255, 0.7)
+	);
+	border-radius: 50%;
+	text-align: center;
+	height: 2.5rem;
+	border: solid 1px rgb(255, 255, 255);
+	color: white;
+	width: 8rem;
+	font-family: "IBM Plex Mono", monospace;
+	cursor: pointer;
 }
 
 .text {
-    font-family: 'IBM Plex Mono', monospace;
-    color: white;
-}
-
-.tip-amounts {
-    width: 34%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    margin-left: 60%;
-    
+	font-family: "IBM Plex Mono", monospace;
+	color: white;
 }
 
 ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: .75;
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 0.75;
 }
 
 .tip-buttons {
-    background-image: repeating-radial-gradient(rgba(0, 0, 0, 0.541), rgba(255, 255, 255, 0.178));
+	background-image: repeating-radial-gradient(
+		rgba(0, 0, 0, 0.541),
+		rgba(255, 255, 255, 0.178)
+	);
+	padding: 0.25rem;
 }
 
 .tip-hover {
-    background-image: repeating-radial-gradient(rgb(108, 0, 248), rgba(255, 255, 255, 0.7));
-    cursor: pointer;
-    transform: scale(1.2, 1.2);
-    transition-duration: .3s;
+	background-image: repeating-radial-gradient(
+		rgb(108, 0, 248),
+		rgba(255, 255, 255, 0.7)
+	);
+	cursor: pointer;
+	transform: scale(1.2, 1.2);
+	transition-duration: 0.3s;
 }
 
 .tip-click {
-    background-image: repeating-radial-gradient(rgb(57, 128, 0), rgba(255, 255, 255, 0.082));
-    border-radius: 25%;
+	background-image: repeating-radial-gradient(
+		rgb(57, 128, 0),
+		rgba(255, 255, 255, 0.082)
+	);
+	border-radius: 25%;
 }
 
 .reset {
-    background-image: repeating-radial-gradient(rgb(0, 190, 248), rgba(255, 255, 255, 0.7));
-    border-radius: 50%;
-    text-align: center;
-    height: 2.5rem;
-    border: solid 1px rgb(255, 255, 255);
-    color: white;
-    width: 8rem;
-    font-family: 'IBM Plex Mono', monospace;
-    cursor: pointer;
+	background-image: repeating-radial-gradient(
+		rgb(0, 190, 248),
+		rgba(255, 255, 255, 0.7)
+	);
+	border-radius: 50%;
+	text-align: center;
+	height: 2.5rem;
+	border: solid 1px rgb(255, 255, 255);
+	color: white;
+	width: 8rem;
+	font-family: "IBM Plex Mono", monospace;
+	cursor: pointer;
 }
 
 input:hover {
-    background-color: rgba(255, 255, 255, 0.527);
-    transform: scale(1.1, 1.1);
-    transition-duration: .3s;
+	background-color: rgba(255, 255, 255, 0.527);
+	transform: scale(1.1, 1.1);
+	transition-duration: 0.3s;
 }
 
 input:focus {
-    outline: none;
+	outline: none;
 }
 
 /* form:hover {
@@ -212,38 +354,92 @@ input:focus {
 } */
 
 @keyframes shadow-pulse {
-    0% {
-        box-shadow: 0 0 0 0px rgba(166, 130, 177, 0.479);
-    }
+	0% {
+		box-shadow: 0 0 0 0px rgba(166, 130, 177, 0.479);
+	}
 
-    100% {
-        box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0);
-    }
+	100% {
+		box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0);
+	}
 }
 
 .pulse {
-    animation: shadow-pulse 1s infinite;
+	animation: shadow-pulse 1s infinite;
 }
 
 .error-message {
-    border: none;
-    color: red;
-    padding: 1rem;
-    visibility: hidden;
+	border: none;
+	color: red;
+	padding: 1rem;
+	visibility: hidden;
 }
 
 .tip-message {
-    border: none;
-    color: green;
-    padding: 1rem;
-    visibility: hidden;
+	border: none;
+	color: green;
+	padding: 1rem;
+	visibility: hidden;
 }
 
 .instructions {
-    width: 85%;
-    margin: 1rem auto;
-    border-bottom: solid .5px white;
-    border-right: none;
-    border-left: none;
-    cursor: default;
+	width: 85%;
+	margin: 1rem auto;
+	border-bottom: solid 0.5px white;
+	border-right: none;
+	border-left: none;
+	cursor: default;
+}
+
+@media only screen and (max-device-width: 900px) {
+	form {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+	}
+	.calc-title {
+		margin: 0;
+	}
+
+	.first,
+	.second,
+	.third,
+	.fourth,
+	.submit {
+		padding: 0;
+	}
+
+	.input-blue,
+	.input-red,
+	.input-yellow,
+	.input-green,
+	.reset {
+		height: 50%;
+		padding: 0;
+	}
+
+	.second,
+	.fourth {
+		margin-right: 3%;
+	}
+
+	.tip-buttons {
+	}
+	.signature-container {
+		position: absolute;
+	}
+}
+@media only screen and (max-device-width: 750px) and (orientation: portrait) {
+	.calc-title {
+		font-size: 2rem;
+	}
+
+	form {
+		height: 100vh;
+		width: 100vw;
+		margin: 0;
+	}
+
+	.signature-container {
+		position: absolute;
+	}
 }

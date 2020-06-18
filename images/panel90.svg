@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="134.763 38.343 375 667" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg viewBox="134.763 40.704 354 216" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <defs>
     <linearGradient gradientUnits="userSpaceOnUse" x1="213.052" y1="29.332" x2="213.052" y2="303.277" id="gradient-2">
       <stop offset="0" style="stop-color: rgba(33, 33, 33, 0.84)"/>
@@ -22,7 +22,7 @@
       <stop offset="1" style="stop-color: rgb(46, 46, 46);"/>
     </linearGradient>
   </defs>
-  <g transform="matrix(1.130073, 0, 0, 1.755466, 73.221298, -19.318745)" style="filter: none;">
+  <g transform="matrix(0, 0.670593, -0.953121, 0, 524.175476, 0.921091)" style="filter: none;">
     <path d="M 92.686 408.54 C 76.031 408.485 59.333 397.464 59.325 377.815 C 60.058 359.934 60.006 79.075 60.475 70.425 C 60.961 46.475 76.043 37.436 93.836 37.376 C 118.405 37.134 326.686 37.031 344.616 37.376 C 364.619 37.259 381.268 46.398 381.428 70.425 C 381.413 89.693 381.233 363.335 381.428 379.305 C 381.483 396.409 365.762 409.203 347.172 408.541 C 333.236 408.203 102.032 408.413 92.682 408.541 L 92.686 408.54 Z" fill-rule="evenodd" style="stroke-width: 7.80126px; stroke: url(#gradient-3); fill: url(#gradient-4);"/>
     <path d="M 75.019 49.635 L 73.493 396.074 L 367.987 396.074 L 367.987 49.21 L 76.545 49.635 L 75.019 49.21 L 75.019 49.635 Z" fill-rule="evenodd" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 0px; fill: url(#gradient-5);" bx:origin="0.502203 0.5"/>
     <path d="M 71.765 302.713 L 71.631 84.865 C 81.864 85.119 170.811 -39.427 353.186 83.696 L 354.475 203.192 C 204.237 213.251 156.334 303.24 71.63 302.169 L 71.63 303.277 L 71.63 302.673 L 71.765 302.713 Z" fill-rule="evenodd" style="stroke-linejoin: round; stroke-linecap: round; stroke: url(#gradient-2); stroke-opacity: 0.46; stroke-width: 0px; fill: url(#gradient-6);" transform="matrix(-0.999998, -0.001392, 0.002875, -0.999998, 432.703767, 387.639526)"/>
